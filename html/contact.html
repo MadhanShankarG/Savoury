@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
         body {
             min-height: 100vh;
             display: flex;
@@ -30,19 +31,25 @@
 </header>
 
 <nav>
-<a href="../html/home.html">Home</a>
+    <a href="../html/home.html">Home</a>
     <a href="../html/cuisine.html">Cuisines</a>
     <a href="../html/restaurants.html">Restaurants</a>
     <a href="../html/contact.html">Contact</a>
     <a href="../html/about_us.html">About Us</a>
-    <div class="cart-icon">
-            <span><a href="../html/cart.html">Cart</a></span>
-        </div>
+
+    <a href="../html/cart.html" class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Cart</span>
+    </a>
 </nav>
 
 <div class="contact-container">
 
     <h1>Contact Us</h1>
+    <p class="page-description">
+        We'd love to hear from you. Whether you have a question about your order,
+        restaurant partnerships, delivery, or feedback, our team is here to help.
+    </p>
 
     <div class="contact-grid">
 
@@ -50,17 +57,91 @@
             <h3>Get in Touch</h3>
             <p><strong>Address:</strong> 24 Market Street, Mumbai, Maharashtra, 400000</p>
             <p><strong>Phone:</strong> +91 98765 43210</p>
-            <p><strong>Email:</strong> support@gmail.com</p>
+            <p><strong>Email:</strong> support@savoury.com</p>
+            <p><strong>Customer Support:</strong> Available 7 Days a Week</p>
         </div>
 
         <div class="contact-box">
             <h3>Working Hours</h3>
             <p>Monday – Friday: 10:00 AM – 10:00 PM</p>
             <p>Saturday – Sunday: 11:00 AM – 11:00 PM</p>
-            <p>Delivery available all days of the week.</p>
+            <p>Delivery available every day.</p>
+            <p>Average response time: Within 30 minutes.</p>
         </div>
 
     </div>
+
+    <!-- Contact Form -->
+    <section class="contact-box">
+        <h2>Send Us a Message</h2>
+
+        <form>
+            <label>Full Name</label><br>
+            <input type="text" placeholder="Enter your name" required><br><br>
+
+            <label>Email Address</label><br>
+            <input type="email" placeholder="Enter your email" required><br><br>
+
+            <label>Phone Number</label><br>
+            <input type="tel" placeholder="+91 98765 43210"><br><br>
+
+            <label>Subject</label><br>
+            <input type="text" placeholder="Enter subject"><br><br>
+
+            <label>Message</label><br>
+            <textarea rows="6" placeholder="Type your message here..." required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Delivery Coverage -->
+    <section class="contact-box">
+        <h2>Delivery Areas</h2>
+        <p>
+            Savoury currently delivers across major areas of Mumbai including
+            Andheri, Bandra, Powai, Dadar, Borivali, Ghatkopar, and Navi Mumbai.
+            Delivery availability may vary depending on restaurant location and
+            peak hours.
+        </p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="contact-box">
+        <h2>Frequently Asked Questions</h2>
+
+        <h4>How can I track my order?</h4>
+        <p>
+            Once your order is confirmed, you'll receive live updates until it
+            reaches your doorstep.
+        </p>
+
+        <h4>Can I cancel my order?</h4>
+        <p>
+            Orders can be cancelled before the restaurant starts preparing the
+            food.
+        </p>
+
+        <h4>How do I report an issue?</h4>
+        <p>
+            Contact our customer support through phone or email with your order
+            details, and we'll resolve the issue as quickly as possible.
+        </p>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="contact-box">
+        <h2>Why Choose Savoury?</h2>
+
+        <ul>
+            <li>Fast and reliable food delivery.</li>
+            <li>Wide variety of cuisines and restaurants.</li>
+            <li>Secure online ordering.</li>
+            <li>Real-time order tracking.</li>
+            <li>Dedicated customer support.</li>
+            <li>Fresh meals delivered to your doorstep.</li>
+        </ul>
+    </section>
 
 </div>
 
