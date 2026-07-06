@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="../html/home.html"><img src="../images/savoury.png" alt="Savoury"></a>
+    </div>
+</header>
+
+<nav>
+<a href="../html/home.html">Home</a>
+    <a href="../html/cuisine.html">Cuisines</a>
+    <a href="../html/restaurants.html">Restaurants</a>
+    <a href="../html/contact.html">Contact</a>
+    <a href="../html/about_us.html">About Us</a>
+    <div class="cart-icon">
+            <span><a href="../html/cart.html">Cart</a></span>
+        </div>
+</nav>
+
+<section class="checkout-progress">
+
+    <div class="step active">
+        <i>🛒</i>
+        <span>Cart</span>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="step active">
+        <i>💳</i>
+        <span>Checkout</span>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="step">
+        <i>✅</i>
+        <span>Success</span>
+    </div>
+
+</section>
+
+<section class="checkout-container">
+
+<div class="checkout-left">
+
+<h2>📍 Delivery Address</h2>
+
+<form>
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter Full Name" required>
+
+<label>Phone Number</label>
+<input type="text" placeholder="Enter Phone Number" required>
+
+<label>Email</label>
+<input type="email" placeholder="Enter Email" required>
+
+<label>Address</label>
+<textarea placeholder="Enter Address" required></textarea>
+
+<div class="row">
+<div>
+<label>City</label>
+<input type="text" required>
+</div>
+<div>
+<label>Pincode</label>
+<input type="text" required>
+</div>
+</div>
+
+<label>Payment Method</label>
+<select>
+<option>Cash On Delivery</option>
+<option>UPI</option>
+<option>Credit Card</option>
+<option>Debit Card</option>
+</select>
+
+</form>
+
+</div>
+
+<div class="checkout-right">
+
+<h2>Order Summary</h2>
+
+<div class="summary-item">
+<span>Margherita Pizza &times; 1</span>
+<span>$14.99</span>
+</div>
+
+<div class="summary-item">
+<span>Creamy Chicken Alfredo &times; 2</span>
+<span>$37.00</span>
+</div>
+
+<div class="summary-item">
+<span>Deluxe Sushi Platter &times; 1</span>
+<span>$22.75</span>
+</div>
+
+<div class="summary-item">
+<span>Gourmet Cheeseburger &times; 2</span>
+<span>$25.98</span>
+</div>
+
+<div class="summary-item">
+<span>Chocolate Lava Cake &times; 1</span>
+<span>$9.99</span>
+</div>
+
+<hr>
+
+<div class="summary-item">
+<span>Subtotal</span>
+<span>$110.71</span>
+</div>
+
+<div class="summary-item">
+<span>Delivery</span>
+<span>$2.99</span>
+</div>
+
+<div class="summary-item">
+<span>GST</span>
+<span>$5.54</span>
+</div>
+
+<hr>
+
+<div class="summary-item total">
+<span>Total</span>
+<span>$119.24</span>
+</div>
+
+<div class="coupon-box">
+<h3>Coupon Code</h3>
+<input type="text" placeholder="Enter Coupon Code">
+<button>Apply Coupon</button>
+</div>
+
+<div class="delivery-info">
+🚚 Estimated Delivery
+<br><br>
+25 - 30 Minutes
+</div>
+
+<div class="secure-payment">
+🔒 100% Secure Checkout
+</div>
+
+<a href="order-success.html">
+<button class="place-order">Place Order</button>
+</a>
+
+</div>
+
+</section>
+
+</body>
+</html>

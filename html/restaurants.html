@@ -4,164 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Restaurants</title>
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:#f5f5f5;
-}
-
-/* Header */
-
-header{
-    background:#ff5722;
-    color:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 60px;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:bold;
-}
-
-nav a{
-    color:rgb(146, 50, 50);
-    text-decoration:none;
-    margin-left:25px;
-    font-size:18px;
-}
-
-nav a:hover{
-    color:rgb(0, 0, 0);
-}
-
-/* Hero */
-
-.hero{
-    height:300px;
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400");
-    background-size:cover;
-    background-position:center;
-    color:white;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    margin-bottom: 60px;
-}
-
-.hero h1{
-    font-size:50px;
-}
-
-.hero p{
-    margin-top:15px;
-    font-size:20px;
-}
-
-/* Search */
-
-.search{
-    text-align:center;
-    margin:30px;
-}
-
-.search input{
-    width:50%;
-    padding:12px;
-    border:1px solid #ccc;
-    border-radius:20px;
-}
-
-/* Restaurant Cards */
-
-.container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
-    margin-bottom:40px;
-}
-
-.card{
-    width:300px;
-    background:white;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 0 10px lightgray;
-}
-
-.card img{
-    width:100%;
-    height:200px;
-}
-
-.card-content{
-    padding:15px;
-}
-
-.card-content h3{
-    margin-bottom:10px;
-}
-
-.card-content p{
-    margin:6px 0;
-    color:#555;
-}
-
-.offer{
-    background:red;
-    color:white;
-    display:inline-block;
-    padding:5px 10px;
-    border-radius:5px;
-    margin-top:8px;
-}
-
-button{
-    margin-top:15px;
-    width:100%;
-    padding:10px;
-    background:#ff5722;
-    color:white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#e64a19;
-}
-
-/* Footer */
-
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-</style>
-
+<link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
 
 <header>
-    <h2>Food Ordering System</h2>
+    <div class="logo">
+        <a href="../html/home.html"><img src="../images/savoury.png" alt="Savoury"></a>
+    </div>
 </header>
 
 <nav>
@@ -175,174 +26,142 @@ footer{
         </div>
 </nav>
 
+<section class="carousel">
+        <button class="carousel-arrow prev">&#10094;</button>
+        <h1>Top Restaurants Near You</h1>
+        <p>Fresh Food · Fast Delivery · Great Offers</p>
+        <button class="carousel-arrow next">&#10095;</button>
+        <div class="carousel-dots"></div>
+    </section>
+<!-- <section class="page-hero">
+    <h1>Top Restaurants Near You</h1>
+    <p>Fresh Food · Fast Delivery · Great Offers</p>
+</section> -->
 
-<section class="hero">
-
-<h1>Top Restaurants Near You</h1>
-
-<p>Fresh Food • Fast Delivery • Great Offers</p>
-
-</section>
-
-<div class="search">
-
-<input type="text" placeholder="Search Restaurant">
-
+<div class="page-search">
+    <input type="text" placeholder="Search Restaurant">
 </div>
 
-<div class="container">
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600">
-
-<div class="card-content">
-
-<h3>Spice Garden</h3>
-
-<p>⭐ 4.7 Rating</p>
-
-<p>🍛 Indian Cuisine</p>
-
-<p>🛵 30 mins</p>
-
-<span class="offer">20% OFF</span>
-
-<a href="spicegarden.html">
-<button>View Menu</button>
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600">
-
-<div class="card-content">
-
-<h3>Dragon Wok</h3>
-
-<p>⭐ 4.6 Rating</p>
-
-<p>🥡 Chinese Cuisine</p>
-
-<p>🛵 25 mins</p>
-
-<span class="offer">Free Delivery</span>
-
-<a href="dragon.html">
-<button>View Menu</button>
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600">
-
-<div class="card-content">
-
-<h3>Pizza Palace</h3>
-
-<p>⭐ 4.8 Rating</p>
-
-<p>🍕 Italian Cuisine</p>
-
-<p>🛵 20 mins</p>
-
-<span class="offer">Buy 1 Get 1</span>
-
-<a href="pizza.html">
-<button>View Menu</button>
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600">
-
-<div class="card-content">
-
-<h3>Burger Point</h3>
-
-<p>⭐ 4.5 Rating</p>
-
-<p>🍔 American Cuisine</p>
-
-<p>🛵 35 mins</p>
-
-<span class="offer">15% OFF</span>
-
-<a href="burger.html">
-<button>View Menu</button>
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600">
-
-<div class="card-content">
-
-<h3>South Treat</h3>
-
-<p>⭐ 4.9 Rating</p>
-
-<p>🥘 South Indian</p>
-
-<p>🛵 18 mins</p>
-
-<span class="offer">Combo Offer</span>
-
-<a href="south.html">
-<button>View Menu</button>
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600">
-
-<div class="card-content">
-
-<h3>Sweet Heaven</h3>
-
-<p>⭐ 4.8 Rating</p>
-
-<p>🍰 Desserts</p>
-
-<p>🛵 15 mins</p>
-
-<span class="offer">10% OFF</span>
-
-<a href="dessert.html">
-<button>View Menu</button>
-</a>
-
-</div>
-
-</div>
+<div class="restaurant-grid">
+
+    <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600" alt="Spice Garden">
+        <div class="restaurant-content">
+            <h3>Spice Garden</h3>
+            <p>⭐ 4.7 Rating</p>
+            <p>🍛 Indian Cuisine</p>
+            <p>🛵 30 mins</p>
+            <span class="restaurant-offer">20% OFF</span>
+            <a href="spicegarden.html"><button>View Menu</button></a>
+        </div>
+    </div>
+
+    <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600" alt="Dragon Wok">
+        <div class="restaurant-content">
+            <h3>Dragon Wok</h3>
+            <p>⭐ 4.6 Rating</p>
+            <p>🥡 Chinese Cuisine</p>
+            <p>🛵 25 mins</p>
+            <span class="restaurant-offer">Free Delivery</span>
+            <a href="dragon.html"><button>View Menu</button></a>
+        </div>
+    </div>
+
+    <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Pizza Palace">
+        <div class="restaurant-content">
+            <h3>Pizza Palace</h3>
+            <p>⭐ 4.8 Rating</p>
+            <p>🍕 Italian Cuisine</p>
+            <p>🛵 20 mins</p>
+            <span class="restaurant-offer">Buy 1 Get 1</span>
+            <a href="pizza.html"><button>View Menu</button></a>
+        </div>
+    </div>
+
+    <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600" alt="Burger Point">
+        <div class="restaurant-content">
+            <h3>Burger Point</h3>
+            <p>⭐ 4.5 Rating</p>
+            <p>🍔 American Cuisine</p>
+            <p>🛵 35 mins</p>
+            <span class="restaurant-offer">15% OFF</span>
+            <a href="burger.html"><button>View Menu</button></a>
+        </div>
+    </div>
+
+    <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600" alt="South Treat">
+        <div class="restaurant-content">
+            <h3>South Treat</h3>
+            <p>⭐ 4.9 Rating</p>
+            <p>🥘 South Indian</p>
+            <p>🛵 18 mins</p>
+            <span class="restaurant-offer">Combo Offer</span>
+            <a href="south.html"><button>View Menu</button></a>
+        </div>
+    </div>
+
+    <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600" alt="Sweet Heaven">
+        <div class="restaurant-content">
+            <h3>Sweet Heaven</h3>
+            <p>⭐ 4.8 Rating</p>
+            <p>🍰 Desserts</p>
+            <p>🛵 15 mins</p>
+            <span class="restaurant-offer">10% OFF</span>
+            <a href="dessert.html"><button>View Menu</button></a>
+        </div>
+    </div>
 
 </div>
 
 <footer>
-
-<p>© 2026 Foodie's Hub | Delicious Food Delivered Fast</p>
-
+    <div class="footer-grid">
+        <div>
+            <h4>Savoury</h4>
+            <p>24 Market Street, Mumbai, Maharashtra, 400000</p>
+            <p>support@foodorderingsystem.com | +91 98765 43210</p>
+            <div class="footer-social">
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://fb.com" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/cuisine.html">Cuisines</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+                <li><a href="../html/about_us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Hours</h4>
+            <p>Mon - Fri: 10 AM - 10 PM</p>
+            <p>Sat - Sun: 11 AM - 11 PM</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Savoury. All Rights Reserved.</p>
+    </div>
 </footer>
 
 </body>
+<script src="../js/carousel.js"></script>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            initCarousel(".carousel", [
+                "https://images.unsplash.com/photo-1729394405518-eaf2a0203aa7?q=80&w=2231&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1526234362653-3b75a0c07438?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1739792598744-3512897156e3?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1709403393152-dbebf4be0cea?q=80&w=2230&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1670295879930-5b3f0e91df51?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://plus.unsplash.com/premium_photo-1723491285855-f1035c4c703c?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "https://images.unsplash.com/photo-1560053608-13721e0d69e8?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            ]);
+        });
+    </script>
 </html>
