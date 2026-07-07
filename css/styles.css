@@ -10,7 +10,35 @@ background:#FFFFFF;
 padding:12px 40px;
 display:flex;
 align-items:center;
+justify-content:space-between;
 box-shadow:0 2px 8px rgba(0,0,0,0.06);
+}
+
+.user-profile{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.user-greeting{
+color:#2B2118;
+font-size:14px;
+font-weight:bold;
+white-space:nowrap;
+}
+
+.user-avatar{
+width:38px;
+height:38px;
+border-radius:50%;
+background:#FF6B35;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+font-size:14px;
+flex-shrink:0;
 }
 
 .logo img{
