@@ -1,81 +1,89 @@
+:root {
+    --savoury-orange: #FF6B35;
+    --savoury-brown: #2B2118;
+}
+
 body{
 margin:0;
 font-family:Arial, sans-serif;
+font-size:16px;
+line-height:normal;
 background:#FFF8F2;
 }
 
+/* ---- Bootstrap Reboot Overrides ----
+   Bootstrap's reboot resets heading sizes, paragraph margins, list padding, etc.
+   These rules restore the original appearance for all content (non-nav) elements.
+---------------------------------------------------------------- */
+h1 { font-size: 2em;   font-weight: bold; margin: 0.67em 0; }
+h2 { font-size: 1.5em; font-weight: bold; margin: 0.75em 0; }
+h3 { font-size: 1.17em;font-weight: bold; margin: 0.83em 0; }
+h4 { font-size: 1em;   font-weight: bold; margin: 1.12em 0; }
+h5 { font-size: 0.83em;font-weight: bold; margin: 1.5em  0; }
+h6 { font-size: 0.75em;font-weight: bold; margin: 1.67em 0; }
 
-header{
-background:#FFFFFF;
-padding:12px 40px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-box-shadow:0 2px 8px rgba(0,0,0,0.06);
+p  { margin: 1em 0; }
+
+ul, ol { padding-left: 40px; margin: 1em 0; }
+
+a { color: inherit; text-decoration: none; }
+
+
+/* ---------- Savoury Header & Nav (Bootstrap-based) ---------- */
+
+header.savoury-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
 }
 
-.user-profile{
-display:flex;
-align-items:center;
-gap:10px;
+header.savoury-header .logo img {
+    height: 42px;
 }
 
-.user-greeting{
-color:#2B2118;
-font-size:14px;
-font-weight:bold;
-white-space:nowrap;
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.user-avatar{
-width:38px;
-height:38px;
-border-radius:50%;
-background:#FF6B35;
-color:white;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:bold;
-font-size:14px;
-flex-shrink:0;
+.user-greeting {
+    color: var(--savoury-brown);
+    font-size: 0.9rem;
 }
 
-.logo img{
-height:44px;
-display:block;
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--savoury-orange);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
 }
 
-
-nav{
-background:#FF6B35;
-padding:12px 40px;
-display:flex;
-align-items:center;
-position:sticky;
-top:0;
-
+.logo img {
+    height: 42px;
+    display: block;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin-right:25px;
-font-weight:bold;
+nav.savoury-nav {
+    background-color: var(--savoury-brown);
 }
 
-nav a:hover{
-color:#2B2118;
+nav.savoury-nav .nav-link {
+    color: #f2e9e4 !important;
+    font-weight: 500;
 }
 
-.cart-icon{
-margin-left:auto;
-color:white;
-font-size:18px;
+nav.savoury-nav .nav-link:hover,
+nav.savoury-nav .nav-link.active {
+    color: var(--savoury-orange) !important;
 }
 
-.cart-icon a{
-margin-right:0;
+nav.savoury-nav .cart-icon {
+    color: #fff !important;
 }
 /*about us*/
 .container{
@@ -562,13 +570,6 @@ margin:6px 0;
 @media(max-width:700px){
 .contact-grid{
 grid-template-columns:1fr;
-}
-nav{
-flex-wrap:wrap;
-}
-.cart-icon{
-margin-left:0;
-margin-top:8px;
 }
 }
 .page-description {
