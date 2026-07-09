@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Palace — Authentic Italian Cuisine | Savoury</title>
+    <meta name="description" content="Order from Pizza Palace on Savoury — Wood-fired Pizzas, Creamy Pastas, Garlic Breads, Fresh Salads and Italian Desserts delivered to your door.">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <!-- Font Awesome 6.7.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Savoury shared styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- ========================= HEADER ========================= -->
+<header class="savoury-header d-flex justify-content-between align-items-center px-4 py-2">
+    <div class="logo">
+        <a href="../index.html"><img src="https://i.postimg.cc/q7J2T1M0/savoury.png" alt="Savoury"></a>
+    </div>
+    <div class="user-profile d-flex align-items-center gap-2">
+        <span class="user-greeting">Hello User, signed in</span>
+        <div class="user-avatar">U</div>
+    </div>
+</header>
+
+<!-- ========================= NAV ========================= -->
+<nav class="savoury-nav navbar navbar-expand-md px-4">
+    <div class="collapse navbar-collapse justify-content-center">
+        <ul class="navbar-nav gap-4 align-items-center">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/cuisine.html">Cuisines</a></li>
+            <li class="nav-item"><a class="nav-link active" href="../html/restaurants.html">Restaurants</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/about_us.html">About Us</a></li>
+            <li class="nav-item">
+                <a href="../html/cart.html" class="nav-link cart-icon d-flex align-items-center gap-1">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ========================= RESTAURANT HERO ========================= -->
+<section class="restaurant-hero" style="background-image: linear-gradient(rgba(43,33,24,.65),rgba(43,33,24,.50)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr8v9e04abS7ggTLmGN1A_EFY3QSsAA3o4lqw5SuD0HjR7awwS_QamSpu2&s=10');">
+    <div class="restaurant-hero-overlay">
+        
+        <h1 class="restaurant-hero-title">Pizza Palace</h1>
+        <p class="restaurant-hero-tagline">La Dolce Vita &mdash; Wood-fired Pizzas &middot; Creamy Pastas &middot; Italian Classics</p>
+        <div class="restaurant-hero-meta">
+            <span class="rh-meta-chip"><i class="fa-solid fa-star"></i> 4.8 Rating</span>
+            <span class="rh-meta-chip"><i class="fa-solid fa-motorcycle"></i> 20 mins delivery</span>
+            <span class="rh-meta-chip"><i class="fa-solid fa-indian-rupee-sign"></i> Min order &#8377;199</span>
+            <span class="rh-meta-chip rh-open"><i class="fa-solid fa-circle"></i> Open Now</span>
+        </div>
+    </div>
+</section>
+
+<!-- ========================= BREADCRUMB ========================= -->
+<div class="breadcrumb">
+    <a href="../index.html">Home </a> &rsaquo;
+    <a href="../html/restaurants.html">Restaurants </a> &rsaquo;
+    Pizza Palace
+</div>
+
+<!-- ========================= OFFERS STRIP ========================= -->
+<div class="category-intro">
+    <h2>Today's Special Offers</h2>
+    <p>Grab a deal before they run out &mdash; exclusive offers just for you!</p>
+    <div class="offers-strip">
+        <span class="restaurant-offer"><i class="fa-solid fa-pizza-slice"></i> Buy 1 Get 1 on All Pizzas</span>
+        <span class="restaurant-offer"><i class="fa-solid fa-tags"></i> 15% OFF on Pasta Combos</span>
+        <span class="restaurant-offer"><i class="fa-solid fa-truck"></i> Free Delivery above &#8377;499</span>
+        <span class="restaurant-offer"><i class="fa-solid fa-gift"></i> Free Tiramisu on &#8377;799+</span>
+    </div>
+</div>
+
+<!-- ========================= MENU NAVIGATION ========================= -->
+<div class="menu-nav-strip">
+    <a href="#pizzas" class="menu-nav-link">&#x1F355; Pizzas</a>
+    <a href="#pastas" class="menu-nav-link">&#x1F35D; Pastas</a>
+    <a href="#garlic-breads" class="menu-nav-link">&#x1F956; Garlic Breads</a>
+    <a href="#salads" class="menu-nav-link">&#x1F957; Salads</a>
+    <a href="#beverages" class="menu-nav-link">&#x1F964; Beverages</a>
+    <a href="#desserts" class="menu-nav-link">&#x1F382; Desserts</a>
+    <a href="#sides" class="menu-nav-link">&#x1F35F; Sides</a>
+</div>
+
+<!-- ========================= PIZZAS ========================= -->
+<div class="section-block" id="pizzas">
+    <h2>&#x1F355; Pizzas</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600" alt="Margherita Pizza">
+            <div class="restaurant-content">
+                <h3>Margherita</h3>
+                <p>Classic Neapolitan pizza with San Marzano tomato sauce and fresh mozzarella</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.5k reviews)</p>
+                <p class="menu-price">&#8377;299</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Pepperoni Pizza">
+            <div class="restaurant-content">
+                <h3>Pepperoni &amp; Chilli</h3>
+                <p>Double-layered pepperoni with mozzarella, jalape&ntilde;os and tomato base</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.8k reviews)</p>
+                <p class="menu-price">&#8377;389</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600" alt="BBQ Chicken Pizza">
+            <div class="restaurant-content">
+                <h3>BBQ Chicken Pizza</h3>
+                <p>Smoked chicken, red onion, corn and BBQ sauce on a crispy thin crust</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(1.2k reviews)</p>
+                <p class="menu-price">&#8377;369</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=600" alt="Four Cheese Pizza">
+            <div class="restaurant-content">
+                <h3>Quattro Formaggi</h3>
+                <p>Four-cheese bliss &mdash; mozzarella, gorgonzola, parmesan and ricotta</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(896 reviews)</p>
+                <p class="menu-price">&#8377;419</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= PASTAS ========================= -->
+<div class="section-block" id="pastas">
+    <h2>&#x1F35D; Pastas</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=600" alt="Spaghetti Carbonara">
+            <div class="restaurant-content">
+                <h3>Spaghetti Carbonara</h3>
+                <p>Classic Roman pasta with pancetta, egg yolk, pecorino and black pepper</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.1k reviews)</p>
+                <p class="menu-price">&#8377;329</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600" alt="Penne Arrabbiata">
+            <div class="restaurant-content">
+                <h3>Penne Arrabbiata</h3>
+                <p>Penne in a fiery tomato-garlic sauce with fresh basil and olive oil</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(783 reviews)</p>
+                <p class="menu-price">&#8377;279</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLreFEXFCUHUfE9Mgq8rNBfMW80qT0x1QcQI9ENEVpkw&s=10" alt="Fettuccine Alfredo">
+            <div class="restaurant-content">
+                <h3>Fettuccine Alfredo</h3>
+                <p>Silky fettuccine tossed in a buttery parmesan cream sauce &mdash; pure comfort</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(962 reviews)</p>
+                <p class="menu-price">&#8377;309</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAjXsvCg_XY06vRpZTRVTa_ndgch4BD0ebXanIqgESpQ&s=10" alt="Lasagne">
+            <div class="restaurant-content">
+                <h3>Classic Lasagne</h3>
+                <p>Layers of pasta, slow-cooked beef rag&ugrave; and b&eacute;chamel, oven-baked golden</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.3k reviews)</p>
+                <p class="menu-price">&#8377;379</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= GARLIC BREADS ========================= -->
+<div class="section-block" id="garlic-breads">
+    <h2>&#x1F956; Garlic Breads &amp; Focaccia</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthAHpZakZC4rY_IsmIjF01npxEIcIPr4Q1msGZCmBhg&s=10" alt="Classic Garlic Bread">
+            <div class="restaurant-content">
+                <h3>Classic Garlic Bread</h3>
+                <p>Toasted ciabatta brushed with garlic-herb butter &mdash; the perfect side</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(2.1k reviews)</p>
+                <p class="menu-price">&#8377;99</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfL-nXaxf5_v7Z5v01QivcQW5VACJOFlTd0ZdJ9ux8zQ&s" alt="Cheesy Garlic Bread">
+            <div class="restaurant-content">
+                <h3>Cheesy Garlic Bread</h3>
+                <p>Garlic bread loaded with melted mozzarella and a sprinkle of oregano</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.7k reviews)</p>
+                <p class="menu-price">&#8377;149</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0TKqAa9mZHkNf0-EIgQ5vDrZN-whuoBUAq8wd0ZUJUw&s=10" alt="Rosemary Focaccia">
+            <div class="restaurant-content">
+                <h3>Rosemary Focaccia</h3>
+                <p>Soft olive oil flatbread dimpled with fresh rosemary and sea salt flakes</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(543 reviews)</p>
+                <p class="menu-price">&#8377;179</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuQ7ukajgARVHDAmsczoXvQLcY1ODCJnlj3D8sQJiFxQ&s=10" alt="Bruschetta">
+            <div class="restaurant-content">
+                <h3>Bruschetta Pomodoro</h3>
+                <p>Toasted sourdough with diced cherry tomatoes, basil and extra virgin olive oil</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(689 reviews)</p>
+                <p class="menu-price">&#8377;159</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= SALADS ========================= -->
+<div class="section-block" id="salads">
+    <h2>&#x1F957; Salads</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Caesar Salad">
+            <div class="restaurant-content">
+                <h3>Classic Caesar Salad</h3>
+                <p>Crisp romaine, parmesan shavings, croutons and Caesar dressing</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(621 reviews)</p>
+                <p class="menu-price">&#8377;219</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600" alt="Caprese Salad">
+            <div class="restaurant-content">
+                <h3>Caprese Salad</h3>
+                <p>Buffalo mozzarella, heritage tomatoes and fresh basil with aged balsamic</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(478 reviews)</p>
+                <p class="menu-price">&#8377;249</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=600" alt="Panzanella">
+            <div class="restaurant-content">
+                <h3>Panzanella</h3>
+                <p>Tuscan bread salad with cucumber, olives, red onion and sun-dried tomatoes</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(312 reviews)</p>
+                <p class="menu-price">&#8377;229</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= BEVERAGES ========================= -->
+<div class="section-block" id="beverages">
+    <h2>&#x1F964; Beverages</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600" alt="Italian Soda">
+            <div class="restaurant-content">
+                <h3>Italian Soda</h3>
+                <p>Sparkling water with housemade fruit syrup &mdash; blood orange, raspberry or lemon</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(519 reviews)</p>
+                <p class="menu-price">&#8377;99</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp-srXZ7eXoixzkg8LKW9EUt-JLPLGSAqczNhRfJtIIw&s=10" alt="Mango Lassi">
+            <div class="restaurant-content">
+                <h3>Virgin Mojito</h3>
+                <p>Fresh lime, mint and sugar muddled with sparkling water over crushed ice</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(723 reviews)</p>
+                <p class="menu-price">&#8377;119</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600" alt="Fresh Lemonade">
+            <div class="restaurant-content">
+                <h3>Fresh Lemonade</h3>
+                <p>Housemade squeezed lemonade with a touch of honey and a sprig of mint</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(432 reviews)</p>
+                <p class="menu-price">&#8377;89</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl1kbJpo75KHJUwt_n6Fsllm7cOD3idbPQizMhVM35Qg&s=10" alt="Chilled Tiramisu Shake">
+            <div class="restaurant-content">
+                <h3>Tiramisu Shake</h3>
+                <p>A thick milkshake inspired by the classic dessert &mdash; coffee, mascarpone and cocoa</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(587 reviews)</p>
+                <p class="menu-price">&#8377;169</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= DESSERTS ========================= -->
+<div class="section-block" id="desserts">
+    <h2>&#x1F382; Desserts</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600" alt="Tiramisu">
+            <div class="restaurant-content">
+                <h3>Tiramis&ugrave;</h3>
+                <p>Espresso-soaked ladyfingers layered with mascarpone cream and dusted with cocoa</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.4k reviews)</p>
+                <p class="menu-price">&#8377;199</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://www.recipetineats.com/tachyon/2025/09/Panna-cotta_8-close-up.jpg?resize=500%2C500" alt="Panna Cotta">
+            <div class="restaurant-content">
+                <h3>Panna Cotta</h3>
+                <p>Silky vanilla cream set in a mould, served with berry coulis</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(763 reviews)</p>
+                <p class="menu-price">&#8377;179</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL69BoH9vAev2ZsuBWYwYcFac6Er7mpnK1abujj8rR_F6BgoEQ3HMJpZ2k&s=10" alt="Gelato">
+            <div class="restaurant-content">
+                <h3>Artisan Gelato (2 scoops)</h3>
+                <p>Italian-style churned gelato &mdash; choose from pistachio, stracciatella or limone</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.1k reviews)</p>
+                <p class="menu-price">&#8377;159</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzbdoPHI5kGJaB33gBP8RQNMHSLB8gukVTJW6W8yrb5w&s=10" alt="Cannoli">
+            <div class="restaurant-content">
+                <h3>Cannoli (2 pcs)</h3>
+                <p>Crispy pastry shells filled with sweet ricotta, candied peel and pistachios</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(489 reviews)</p>
+                <p class="menu-price">&#8377;169</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= SIDES ========================= -->
+<div class="section-block" id="sides">
+    <h2>&#x1F35F; Sides &amp; Extras</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTYx4r3QCfEJvAoNtTFztXjDOX_HP8eo_-nIaozJDzbg&s=10" alt="Soup of the Day">
+            <div class="restaurant-content">
+                <h3>Minestrone Soup</h3>
+                <p>Hearty Italian vegetable soup with cannellini beans, pasta and parmesan rind</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(378 reviews)</p>
+                <p class="menu-price">&#8377;149</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pqUnRULpwjB4iOy_vR2PgRGxo7bIiyDLOmj-rMNOzQ&s=10" alt="Arancini">
+            <div class="restaurant-content">
+                <h3>Arancini (3 pcs)</h3>
+                <p>Golden deep-fried risotto balls stuffed with mozzarella and mushroom rag&ugrave;</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(412 reviews)</p>
+                <p class="menu-price">&#8377;189</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2IecPPyKZX7tj0WdqKtzk7Es3iMmBUUE8oziALe5-gQ&s=10" alt="Olives and Dips">
+            <div class="restaurant-content">
+                <h3>Marinated Olives &amp; Dips</h3>
+                <p>Kalamata olives, roasted garlic hummus and sun-dried tomato spread with crostini</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(298 reviews)</p>
+                <p class="menu-price">&#8377;169</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= ABOUT ========================= -->
+<div class="section-block">
+    <div class="rest-about-grid">
+        <div class="rest-about-text">
+            <h2>About Pizza Palace</h2>
+            <p>
+                Pizza Palace was born in 2008 from a simple belief: great Italian food should be accessible to everyone.
+                Our head chef trained in Naples and Milan, mastering the art of Neapolitan pizza-making and traditional
+                northern Italian pasta technique.
+            </p>
+            <p>
+                Our dough ferments for 48 hours before it reaches the wood-fired oven at 480&deg;C, giving every base
+                that perfect char, airy crust and chewy crumb. We import 00-flour, DOP San Marzano tomatoes and
+                Fior di Latte mozzarella directly from Italy.
+            </p>
+            <div class="rest-about-stats">
+                <div class="rest-stat">
+                    <span class="rest-stat-number">18+</span>
+                    <span class="rest-stat-label">Years serving</span>
+                </div>
+                <div class="rest-stat">
+                    <span class="rest-stat-number">70k+</span>
+                    <span class="rest-stat-label">Happy customers</span>
+                </div>
+                <div class="rest-stat">
+                    <span class="rest-stat-number">4.8</span>
+                    <span class="rest-stat-label">Average rating</span>
+                </div>
+                <div class="rest-stat">
+                    <span class="rest-stat-number">20 min</span>
+                    <span class="rest-stat-label">Avg delivery</span>
+                </div>
+            </div>
+        </div>
+        <div class="rest-about-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr8v9e04abS7ggTLmGN1A_EFY3QSsAA3o4lqw5SuD0HjR7awwS_QamSpu2&s=10" alt="Pizza Palace interior">
+        </div>
+    </div>
+</div>
+
+<!-- ========================= CUSTOMER REVIEWS ========================= -->
+<div class="section-block">
+    <h2>&#11088; Customer Reviews</h2>
+    <div class="reviews-grid">
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-avatar">A</div>
+                <div>
+                    <div class="review-name">Ananya P.</div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+            </div>
+            <p class="review-text">"The Margherita is the best I&rsquo;ve had outside Italy. Perfectly charred crust, fresh basil and the tomato sauce is beautifully tangy. Tiramis&ugrave; arrived intact and tasted heavenly!"</p>
+            <span class="review-date">1 day ago</span>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-avatar">R</div>
+                <div>
+                    <div class="review-name">Rohan D.</div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+            </div>
+            <p class="review-text">"Carbonara was silky, perfectly seasoned and arrived piping hot. The Cheesy Garlic Bread was gone in seconds &mdash; my whole family fought over the last piece. 10/10 will reorder!"</p>
+            <span class="review-date">4 days ago</span>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-avatar">M</div>
+                <div>
+                    <div class="review-name">Megha S.</div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                </div>
+            </div>
+            <p class="review-text">"Quattro Formaggi pizza was indulgent &mdash; all four cheeses beautifully melted. Panna Cotta was delicate and the berry coulis was a nice tart contrast. Delivery was spot-on."</p>
+            <span class="review-date">1 week ago</span>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= FAQ ========================= -->
+<div class="section-block">
+    <h2>&#10067; Frequently Asked Questions</h2>
+    <div class="faq-list">
+
+        <details class="faq-item">
+            <summary class="faq-question">Are the pizzas made in a wood-fired oven?</summary>
+            <p class="faq-answer">Yes! All our pizzas are baked in a 480&deg;C gas-assisted wood-fired oven that replicates the authentic Neapolitan method, giving you that characteristic charred crust and leopard spotting.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">Do you offer vegan options?</summary>
+            <p class="faq-answer">We have several vegan-friendly items including our Panzanella Salad, Penne Arrabbiata (without parmesan) and Rosemary Focaccia. Please mention vegan in Special Instructions at checkout.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">Can I request a gluten-free base?</summary>
+            <p class="faq-answer">Yes, we offer a gluten-free pizza base for an additional &#8377;60. Please select this option in your order notes. Note that our kitchen handles gluten-containing flour, so trace cross-contamination is possible.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">What size are your pizzas?</summary>
+            <p class="faq-answer">All our pizzas are 10-inch (25 cm) Neapolitan-style, which serves 1&ndash;2 people comfortably. We do not currently offer half-and-half topping options.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">How do you keep the pizza crispy during delivery?</summary>
+            <p class="faq-answer">We use ventilated pizza boxes that allow steam to escape, keeping the crust crisp. We also recommend opening the box immediately upon arrival to let any residual steam out.</p>
+        </details>
+
+    </div>
+</div>
+
+<!-- ========================= FOOTER ========================= -->
+<footer>
+    <div class="footer-grid">
+        <div>
+            <h4>Savoury</h4>
+            <p>24 Market Street, Mumbai, Maharashtra, 400000</p>
+            <p>support@savoury.com | +91 98765 43210</p>
+            <div class="footer-social">
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://fb.com" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/cuisine.html">Cuisines</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+                <li><a href="../html/about_us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Hours</h4>
+            <p>Mon - Fri: 10 AM - 10 PM</p>
+            <p>Sat - Sun: 11 AM - 11 PM</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Savoury. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

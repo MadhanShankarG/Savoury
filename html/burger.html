@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Point — American Burgers &amp; Grill | Savoury</title>
+    <meta name="description" content="Order from Burger Point on Savoury — Juicy Burgers, Loaded Fries, Fried Chicken, Milkshakes and American classics delivered fresh to your door.">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <!-- Font Awesome 6.7.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Savoury shared styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- ========================= HEADER ========================= -->
+<header class="savoury-header d-flex justify-content-between align-items-center px-4 py-2">
+    <div class="logo">
+        <a href="../index.html"><img src="https://i.postimg.cc/q7J2T1M0/savoury.png" alt="Savoury"></a>
+    </div>
+    <div class="user-profile d-flex align-items-center gap-2">
+        <span class="user-greeting">Hello User, signed in</span>
+        <div class="user-avatar">U</div>
+    </div>
+</header>
+
+<!-- ========================= NAV ========================= -->
+<nav class="savoury-nav navbar navbar-expand-md px-4">
+    <div class="collapse navbar-collapse justify-content-center">
+        <ul class="navbar-nav gap-4 align-items-center">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/cuisine.html">Cuisines</a></li>
+            <li class="nav-item"><a class="nav-link active" href="../html/restaurants.html">Restaurants</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/about_us.html">About Us</a></li>
+            <li class="nav-item">
+                <a href="../html/cart.html" class="nav-link cart-icon d-flex align-items-center gap-1">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ========================= RESTAURANT HERO ========================= -->
+<section class="restaurant-hero" style="background-image: linear-gradient(rgba(43,33,24,.65),rgba(43,33,24,.50)), url('https://content.jdmagicbox.com/v2/comp/trichy/y8/0431px431.x431.250515093941.m8y8/catalogue/kfc-kumaran-nagar-trichy-american-restaurants-SA57EU2hky.jpg');">
+    <div class="restaurant-hero-overlay">
+        <h1 class="restaurant-hero-title">Burger Point</h1>
+        <p class="restaurant-hero-tagline">Big Flavours, No Compromises &mdash; Burgers &middot; Wings &middot; Loaded Fries</p>
+        <div class="restaurant-hero-meta">
+            <span class="rh-meta-chip"><i class="fa-solid fa-star"></i> 4.5 Rating</span>
+            <span class="rh-meta-chip"><i class="fa-solid fa-motorcycle"></i> 35 mins delivery</span>
+            <span class="rh-meta-chip"><i class="fa-solid fa-indian-rupee-sign"></i> Min order &#8377;149</span>
+            <span class="rh-meta-chip rh-open"><i class="fa-solid fa-circle"></i> Open Now</span>
+        </div>
+    </div>
+</section>
+
+<!-- ========================= BREADCRUMB ========================= -->
+<div class="breadcrumb">
+    <a href="../index.html">Home </a> &rsaquo;
+    <a href="../html/restaurants.html">Restaurants </a> &rsaquo;
+    Burger Point
+</div>
+
+<!-- ========================= OFFERS STRIP ========================= -->
+<div class="category-intro">
+    <h2>Today's Special Offers</h2>
+    <p>Grab a deal before they run out &mdash; exclusive offers just for you!</p>
+    <div class="offers-strip">
+        <span class="restaurant-offer"><i class="fa-solid fa-tags"></i> 15% OFF on All Burgers</span>
+        <span class="restaurant-offer"><i class="fa-solid fa-drumstick-bite"></i> Free Wings on &#8377;699+</span>
+        <span class="restaurant-offer"><i class="fa-solid fa-truck"></i> Free Delivery above &#8377;449</span>
+        <span class="restaurant-offer"><i class="fa-solid fa-credit-card"></i> &#8377;120 OFF above &#8377;799</span>
+    </div>
+</div>
+
+<!-- ========================= MENU NAVIGATION ========================= -->
+<div class="menu-nav-strip">
+    <a href="#burgers" class="menu-nav-link">&#x1F354; Burgers</a>
+    <a href="#fries" class="menu-nav-link">&#x1F35F; Fries &amp; Sides</a>
+    <a href="#chicken" class="menu-nav-link">&#x1F357; Fried Chicken</a>
+    <a href="#wings" class="menu-nav-link">&#x1F357; Wings</a>
+    <a href="#shakes" class="menu-nav-link">&#x1F964; Shakes</a>
+    <a href="#beverages" class="menu-nav-link">&#x1F9C3; Beverages</a>
+    <a href="#desserts" class="menu-nav-link">&#x1F382; Desserts</a>
+</div>
+
+<!-- ========================= BURGERS ========================= -->
+<div class="section-block" id="burgers">
+    <h2>&#x1F354; Burgers</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Classic Cheeseburger">
+            <div class="restaurant-content">
+                <h3>Classic Cheeseburger</h3>
+                <p>Beef smash patty, American cheddar, pickles, mustard and ketchup in a brioche bun</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(2.1k reviews)</p>
+                <p class="menu-price">&#8377;259</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=600" alt="Double Patty Burger">
+            <div class="restaurant-content">
+                <h3>Double Smash Burger</h3>
+                <p>Two smashed beef patties, double cheese, caramelised onions and special sauce</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.7k reviews)</p>
+                <p class="menu-price">&#8377;359</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGO0c0Wmc32BkhfgOUd51A14qbbxWLnRgtDQdf2JY_FGZq6XJdhap9Urw&s=10" alt="BBQ Bacon Burger">
+            <div class="restaurant-content">
+                <h3>BBQ Bacon Burger</h3>
+                <p>Beef patty with crispy bacon rashers, BBQ sauce, lettuce and fried onion rings</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.4k reviews)</p>
+                <p class="menu-price">&#8377;399</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8HysQoThOXdB5a5II-oqZbaYwyQ9MdU-t895zx4Yk7A&s=10" alt="Veggie Burger">
+            <div class="restaurant-content">
+                <h3>Crispy Veggie Burger</h3>
+                <p>Crunchy black bean &amp; corn patty with avocado, sriracha mayo and coleslaw</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(832 reviews)</p>
+                <p class="menu-price">&#8377;239</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= FRIES & SIDES ========================= -->
+<div class="section-block" id="fries">
+    <h2>&#x1F35F; Fries &amp; Sides</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?w=600" alt="Loaded Fries">
+            <div class="restaurant-content">
+                <h3>Loaded Cheese Fries</h3>
+                <p>Crispy golden fries smothered in cheddar sauce, jalapenos and sour cream</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.9k reviews)</p>
+                <p class="menu-price">&#8377;189</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4TcfOFZHiFvXqN7Q4evt-qDN2NNz2v_h8a1UBK3QPyw&s=10" alt="Onion Rings">
+            <div class="restaurant-content">
+                <h3>Beer-Battered Onion Rings</h3>
+                <p>Thick-cut onion rings in a crispy beer batter, served with chipotle dip</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(1.1k reviews)</p>
+                <p class="menu-price">&#8377;149</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsVRdPjUszzKOj6LOKI1MWPMeZdpHCCM0ea1VS9F4o5w&s=10" alt="Coleslaw">
+            <div class="restaurant-content">
+                <h3>Creamy Coleslaw</h3>
+                <p>House-made coleslaw with purple cabbage, carrots and apple cider vinegar</p>
+                <p class="menu-rating">&#11088; 4.6 &nbsp;(643 reviews)</p>
+                <p class="menu-price">&#8377;79</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT52-LktzmTYh2v-e-Kn5I_jWvkaq-AAdK0ptpqyB1Kw&s=10" alt="Mac and Cheese">
+            <div class="restaurant-content">
+                <h3>Mac &amp; Cheese</h3>
+                <p>Elbow pasta baked in a four-cheese sauce with a golden breadcrumb crust</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(914 reviews)</p>
+                <p class="menu-price">&#8377;179</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= FRIED CHICKEN ========================= -->
+<div class="section-block" id="chicken">
+    <h2>&#x1F357; Fried Chicken</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7E0DAQvyZ23aJ_z9a0PVjC782-yJ5zQDw0GX31y1frQ&s=10" alt="Southern Fried Chicken">
+            <div class="restaurant-content">
+                <h3>Southern Fried Chicken (2 pcs)</h3>
+                <p>Buttermilk-marinated chicken fried in a seasoned cornmeal crust &mdash; juicy inside</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.6k reviews)</p>
+                <p class="menu-price">&#8377;299</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdd0sxHYLJB_HFGwVOeOq9YtURyBzDwkQv7T5Cxk0i5Q&s=10" alt="Chicken Strips">
+            <div class="restaurant-content">
+                <h3>Crispy Chicken Strips (4 pcs)</h3>
+                <p>Golden-fried chicken tenders with honey mustard and ranch dipping sauces</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(1.2k reviews)</p>
+                <p class="menu-price">&#8377;269</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY94S__czw1Z7Ca3_rEN4OEwTGrA_nfXO0dUUcGXI1-g&s=10" alt="Chicken Sandwich">
+            <div class="restaurant-content">
+                <h3>Crispy Chicken Sandwich</h3>
+                <p>Fried chicken fillet, shredded lettuce, pickles and spicy mayo in a toasted bun</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(1.3k reviews)</p>
+                <p class="menu-price">&#8377;289</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= WINGS ========================= -->
+<div class="section-block" id="wings">
+    <h2>&#x1F357; Chicken Wings</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=600" alt="Buffalo Wings">
+            <div class="restaurant-content">
+                <h3>Buffalo Wings (6 pcs)</h3>
+                <p>Classic buffalo-sauce tossed wings served with celery sticks and blue cheese dip</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.8k reviews)</p>
+                <p class="menu-price">&#8377;319</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=600" alt="BBQ Wings">
+            <div class="restaurant-content">
+                <h3>Sticky BBQ Wings (6 pcs)</h3>
+                <p>Slow-glazed wings in a smoky BBQ sauce with a honey-chipotle finish</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(1.4k reviews)</p>
+                <p class="menu-price">&#8377;319</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=600" alt="Garlic Parmesan Wings">
+            <div class="restaurant-content">
+                <h3>Garlic Parmesan Wings (6 pcs)</h3>
+                <p>Baked wings tossed in garlic butter and shaved parmesan with herb garnish</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(976 reviews)</p>
+                <p class="menu-price">&#8377;339</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVbk5fOeh5KWm1-F6fF83YvApgdzjU0s22MONFtX33Q&s=10" alt="Korean Wings">
+            <div class="restaurant-content">
+                <h3>Korean Gochujang Wings (6 pcs)</h3>
+                <p>Double-fried crispy wings glazed with gochujang, sesame and spring onion</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(812 reviews)</p>
+                <p class="menu-price">&#8377;349</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= SHAKES ========================= -->
+<div class="section-block" id="shakes">
+    <h2>&#x1F964; Milkshakes</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600" alt="Oreo Milkshake">
+            <div class="restaurant-content">
+                <h3>Oreo Milkshake</h3>
+                <p>Thick blended shake with vanilla ice cream, crushed Oreos and whipped cream</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.2k reviews)</p>
+                <p class="menu-price">&#8377;179</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKAVCRQoFtDf8RyTSl_Rrqw4I85JlF1ggtGSxpn9yA2A&s=10" alt="Chocolate Shake">
+            <div class="restaurant-content">
+                <h3>Double Chocolate Shake</h3>
+                <p>Dark chocolate ice cream blended with hot fudge sauce and chocolate sprinkles</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(943 reviews)</p>
+                <p class="menu-price">&#8377;169</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTaZ4EkSIzt4Ep8ljneV4_BmSIaFPXg2y2OIdPKGMjQA&s=10" alt="Strawberry Shake">
+            <div class="restaurant-content">
+                <h3>Strawberry Shake</h3>
+                <p>Fresh strawberries blended with vanilla ice cream and a pinch of sea salt</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(781 reviews)</p>
+                <p class="menu-price">&#8377;159</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIkxWbL9TQaNcfE6aW_2FBHlVyZ4fxsLfQmaSJ_WTFgw&s=10" alt="Salted Caramel Shake">
+            <div class="restaurant-content">
+                <h3>Salted Caramel Shake</h3>
+                <p>Buttery caramel ice cream blended with sea salt and drizzled with caramel sauce</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(867 reviews)</p>
+                <p class="menu-price">&#8377;179</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= BEVERAGES ========================= -->
+<div class="section-block" id="beverages">
+    <h2>&#x1F9C3; Beverages</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600" alt="Lemonade">
+            <div class="restaurant-content">
+                <h3>Arnold Palmer</h3>
+                <p>Half iced tea, half lemonade &mdash; the classic American refresher over ice</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(498 reviews)</p>
+                <p class="menu-price">&#8377;89</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk0olLyYLySwLoCXdK0r00WsOdZVpREv744ZlmOkFIqg&s=10" alt="Root Beer Float">
+            <div class="restaurant-content">
+                <h3>Root Beer Float</h3>
+                <p>Chilled root beer with a generous scoop of vanilla ice cream &mdash; American diner classic</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(321 reviews)</p>
+                <p class="menu-price">&#8377;119</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3pHY-iQ-9fmUPk5Icxi-rs3Zq7Q9pJk7nSDU42MhQxA&s=10" alt="Iced Coffee">
+            <div class="restaurant-content">
+                <h3>Iced Cold Brew</h3>
+                <p>Slow-steeped 24-hour cold brew coffee over ice with cream and a touch of vanilla</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(612 reviews)</p>
+                <p class="menu-price">&#8377;99</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKXt2k7b4xQfZdTgPantt_OLRaMmsbTVjdubxxZ5tC3w&s=10 alt="Sparkling Water">
+            <div class="restaurant-content">
+                <h3>Sparkling Lemonade</h3>
+                <p>Fresh lemon juice blended with sparkling water, mint and a splash of elderflower</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(418 reviews)</p>
+                <p class="menu-price">&#8377;89</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= DESSERTS ========================= -->
+<div class="section-block" id="desserts">
+    <h2>&#x1F382; Desserts</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://www.oetker.in/assets/recipes/assets/0e7149831748458c9502e361e889f726/964x526/brownie-with-vanilla-ice-cream.jpg" alt="Brownie">
+            <div class="restaurant-content">
+                <h3>Fudge Brownie &amp; Ice Cream</h3>
+                <p>Warm dark chocolate brownie with a scoop of vanilla bean ice cream and hot fudge</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.3k reviews)</p>
+                <p class="menu-price">&#8377;199</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFVlYCzXW7D5VI1XWxZtJcn13esQZDst9luOxcnkmlUg&s=10" alt="Churros">
+            <div class="restaurant-content">
+                <h3>Churros (5 pcs)</h3>
+                <p>Golden fried pastry sticks rolled in cinnamon sugar, served with chocolate dip</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(987 reviews)</p>
+                <p class="menu-price">&#8377;149</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdRY2dwvLprk7eIB_w5bobwdHGYlHCC95MKdN-0038sw&s=10" alt="Cheesecake">
+            <div class="restaurant-content">
+                <h3>New York Cheesecake</h3>
+                <p>Dense, creamy baked cheesecake on a buttery graham cracker crust with berry topping</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.1k reviews)</p>
+                <p class="menu-price">&#8377;189</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL5dXza2C_2BhGCgKK3-Q3hZ-oFnNB0Ej3_KvIACI2vA&s=10" alt="Cookie">
+            <div class="restaurant-content">
+                <h3>Giant Choco-Chip Cookie</h3>
+                <p>Freshly baked soft-centre cookie loaded with dark and white chocolate chips</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(743 reviews)</p>
+                <p class="menu-price">&#8377;99</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= ABOUT ========================= -->
+<div class="section-block">
+    <div class="rest-about-grid">
+        <div class="rest-about-text">
+            <h2>About Burger Point</h2>
+            <p>
+                Started by two burger-obsessed friends in 2012, Burger Point has grown from a tiny food truck to Mumbai&rsquo;s
+                most-loved smash burger joint. We source grass-fed beef from Maharashtra, hand-press each patty fresh to
+                order, and bake our brioche buns in-house every morning.
+            </p>
+            <p>
+                Every element on our menu is crafted from scratch &mdash; the sauces, the pickles, the coleslaw, the batter.
+                We don&rsquo;t cut corners because great burgers deserve great ingredients.
+            </p>
+            <div class="rest-about-stats">
+                <div class="rest-stat">
+                    <span class="rest-stat-number">12+</span>
+                    <span class="rest-stat-label">Years serving</span>
+                </div>
+                <div class="rest-stat">
+                    <span class="rest-stat-number">80k+</span>
+                    <span class="rest-stat-label">Burgers served</span>
+                </div>
+                <div class="rest-stat">
+                    <span class="rest-stat-number">4.5</span>
+                    <span class="rest-stat-label">Average rating</span>
+                </div>
+                <div class="rest-stat">
+                    <span class="rest-stat-number">35 min</span>
+                    <span class="rest-stat-label">Avg delivery</span>
+                </div>
+            </div>
+        </div>
+        <div class="rest-about-image">
+            <img src="https://content.jdmagicbox.com/v2/comp/trichy/y8/0431px431.x431.250515093941.m8y8/catalogue/kfc-kumaran-nagar-trichy-american-restaurants-SA57EU2hky.jpg" alt="Burger Point kitchen">
+        </div>
+    </div>
+</div>
+
+<!-- ========================= CUSTOMER REVIEWS ========================= -->
+<div class="section-block">
+    <h2>&#11088; Customer Reviews</h2>
+    <div class="reviews-grid">
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-avatar">N</div>
+                <div>
+                    <div class="review-name">Nikhil B.</div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+            </div>
+            <p class="review-text">"The Double Smash Burger is an absolute unit &mdash; two perfectly smashed patties, oozing cheese, caramelised onions. Loaded Fries were insane. Best burger in Mumbai, no contest."</p>
+            <span class="review-date">Yesterday</span>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-avatar">D</div>
+                <div>
+                    <div class="review-name">Deepa M.</div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+            </div>
+            <p class="review-text">"Buffalo Wings were perfectly crispy and the sauce had that classic heat-acid balance. Salted Caramel shake was thick and not too sweet. Will definitely be ordering again this weekend!"</p>
+            <span class="review-date">3 days ago</span>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-avatar">T</div>
+                <div>
+                    <div class="review-name">Tarun K.</div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                </div>
+            </div>
+            <p class="review-text">"Veggie Burger surprised me &mdash; crispy patty, great sauce. Mac &amp; Cheese was comfort food heaven. Delivery was 38 mins which was slightly over, but food arrived hot and fresh."</p>
+            <span class="review-date">1 week ago</span>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= FAQ ========================= -->
+<div class="section-block">
+    <h2>&#10067; Frequently Asked Questions</h2>
+    <div class="faq-list">
+
+        <details class="faq-item">
+            <summary class="faq-question">Is the beef halal?</summary>
+            <p class="faq-answer">Yes, all our beef and chicken are sourced from certified halal-approved suppliers in Maharashtra.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">Do you offer vegetarian or vegan burgers?</summary>
+            <p class="faq-answer">We have the Crispy Veggie Burger made with a black bean and corn patty. For vegan customers, request no mayo in Special Instructions and we will substitute with our vegan sriracha sauce.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">Can I order a burger without the bun?</summary>
+            <p class="faq-answer">Yes &mdash; request &ldquo;lettuce wrap&rdquo; or &ldquo;no bun&rdquo; in Special Instructions for a low-carb option. We will wrap your patty and toppings in crisp romaine leaves.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">What sauces are available?</summary>
+            <p class="faq-answer">All orders come with ketchup and mustard. Additional sauces (chipotle, ranch, BBQ, honey mustard, hot sauce) are available as add-ons at &#8377;20 each.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">Do you offer combo meals?</summary>
+            <p class="faq-answer">Absolutely! Each burger can be upgraded to a combo with any fries and a beverage for &#8377;150 extra. Select &ldquo;Make it a Combo&rdquo; in your order notes.</p>
+        </details>
+
+    </div>
+</div>
+
+<!-- ========================= FOOTER ========================= -->
+<footer>
+    <div class="footer-grid">
+        <div>
+            <h4>Savoury</h4>
+            <p>24 Market Street, Mumbai, Maharashtra, 400000</p>
+            <p>support@savoury.com | +91 98765 43210</p>
+            <div class="footer-social">
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://fb.com" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/cuisine.html">Cuisines</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+                <li><a href="../html/about_us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Hours</h4>
+            <p>Mon - Fri: 10 AM - 10 PM</p>
+            <p>Sat - Sun: 11 AM - 11 PM</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Savoury. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

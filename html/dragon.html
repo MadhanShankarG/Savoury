@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Wok — Authentic Chinese Cuisine | Savoury</title>
+    <meta name="description" content="Order from Dragon Wok on Savoury — Noodles, Fried Rice, Manchurian, Momos, Soups and more Chinese delights delivered fresh to your door.">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <!-- Font Awesome 6.7.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Savoury shared styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- ========================= HEADER ========================= -->
+<header class="savoury-header d-flex justify-content-between align-items-center px-4 py-2">
+    <div class="logo">
+        <a href="../index.html"><img src="https://i.postimg.cc/q7J2T1M0/savoury.png" alt="Savoury"></a>
+    </div>
+    <div class="user-profile d-flex align-items-center gap-2">
+        <span class="user-greeting">Hello User, signed in</span>
+        <div class="user-avatar">U</div>
+    </div>
+</header>
+
+<!-- ========================= NAV ========================= -->
+<nav class="savoury-nav navbar navbar-expand-md px-4">
+    <div class="collapse navbar-collapse justify-content-center">
+        <ul class="navbar-nav gap-4 align-items-center">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/cuisine.html">Cuisines</a></li>
+            <li class="nav-item"><a class="nav-link active" href="../html/restaurants.html">Restaurants</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/about_us.html">About Us</a></li>
+            <li class="nav-item">
+                <a href="../html/cart.html" class="nav-link cart-icon d-flex align-items-center gap-1">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ========================= RESTAURANT HERO ========================= -->
+<section class="restaurant-hero" style="background-image: linear-gradient(rgba(43,33,24,.65),rgba(43,33,24,.50)), url('https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1400');">
+    <div class="restaurant-hero-overlay">
+        <h1 class="restaurant-hero-title">Dragon Wok</h1>
+        <p class="restaurant-hero-tagline">Bold Flavours from the Orient &mdash; Noodles &middot; Fried Rice &middot; Manchurian</p>
+        <div class="restaurant-hero-meta">
+            <span class="rh-meta-chip"><i class="fa-solid fa-star"></i> 4.6 Rating</span>
+            <span class="rh-meta-chip"><i class="fa-solid fa-motorcycle"></i> 25 mins delivery</span>
+            <span class="rh-meta-chip"><i class="fa-solid fa-indian-rupee-sign"></i> Min order &#8377;149</span>
+            <span class="rh-meta-chip rh-open"><i class="fa-solid fa-circle"></i> Open Now</span>
+        </div>
+    </div>
+</section>
+
+<!-- ========================= BREADCRUMB ========================= -->
+<div class="breadcrumb">
+    <a href="../index.html">Home </a> &rsaquo;
+    <a href="../html/restaurants.html">Restaurants </a> &rsaquo;
+    Dragon Wok
+</div>
+
+<!-- ========================= OFFERS STRIP ========================= -->
+<div class="category-intro">
+    <h2>Today's Special Offers</h2>
+    <p>Grab a deal before they run out &mdash; exclusive offers just for you!</p>
+    <div class="offers-strip">
+        <span class="restaurant-offer"><i class="fa-solid fa-truck"></i> Free Delivery on All Orders</span>
+        <span class="restaurant-offer"><i class="fa-solid fa-tags"></i> 20% OFF on Noodles &amp; Rice</span>
+        <span class="restaurant-offer"><i class="fa-solid fa-credit-card"></i> &#8377;100 OFF above &#8377;699</span>
+        <span class="restaurant-offer"><i class="fa-solid fa-gift"></i> Free Spring Rolls on &#8377;599+</span>
+    </div>
+</div>
+
+<!-- ========================= MENU NAVIGATION ========================= -->
+<div class="menu-nav-strip">
+    <a href="#soups" class="menu-nav-link">&#x1F35C; Soups &amp; Starters</a>
+    <a href="#noodles" class="menu-nav-link">&#x1F35C; Noodles</a>
+    <a href="#rice" class="menu-nav-link">&#x1F35A; Fried Rice</a>
+    <a href="#manchurian" class="menu-nav-link">&#x1F373; Manchurian</a>
+    <a href="#momos" class="menu-nav-link">&#x1F95F; Momos</a>
+    <a href="#beverages" class="menu-nav-link">&#x1F964; Beverages</a>
+    <a href="#desserts" class="menu-nav-link">&#x1F368; Desserts</a>
+</div>
+
+<!-- ========================= SOUPS & STARTERS ========================= -->
+<div class="section-block" id="soups">
+    <h2>&#x1F35C; Soups &amp; Starters</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600" alt="Hot and Sour Soup">
+            <div class="restaurant-content">
+                <h3>Hot &amp; Sour Soup</h3>
+                <p>Classic Chinese soup with tofu, mushrooms, bamboo shoots and tangy vinegar broth</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(712 reviews)</p>
+                <p class="menu-price">&#8377;149</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600" alt="Spring Rolls">
+            <div class="restaurant-content">
+                <h3>Veg Spring Rolls (4 pcs)</h3>
+                <p>Crispy rolls stuffed with seasoned cabbage, carrots and glass noodles</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(541 reviews)</p>
+                <p class="menu-price">&#8377;129</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600" alt="Corn Soup">
+            <div class="restaurant-content">
+                <h3>Sweet Corn Soup</h3>
+                <p>Thick, velvety corn broth garnished with spring onions and crispy noodles</p>
+                <p class="menu-rating">&#11088; 4.6 &nbsp;(398 reviews)</p>
+                <p class="menu-price">&#8377;119</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=600" alt="Wonton Soup">
+            <div class="restaurant-content">
+                <h3>Chicken Wonton Soup</h3>
+                <p>Silky wontons stuffed with minced chicken in a rich ginger-soy broth</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(326 reviews)</p>
+                <p class="menu-price">&#8377;179</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= NOODLES ========================= -->
+<div class="section-block" id="noodles">
+    <h2>&#x1F35C; Noodles</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600" alt="Hakka Noodles">
+            <div class="restaurant-content">
+                <h3>Veg Hakka Noodles</h3>
+                <p>Stir-fried flat noodles with seasonal vegetables in a dark soy sauce</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(894 reviews)</p>
+                <p class="menu-price">&#8377;189</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1534482421-64566f976cfa?w=600" alt="Chicken Noodles">
+            <div class="restaurant-content">
+                <h3>Chicken Hakka Noodles</h3>
+                <p>Juicy shredded chicken tossed with noodles, peppers and oyster sauce</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(1.1k reviews)</p>
+                <p class="menu-price">&#8377;239</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?w=600" alt="Schezwan Noodles">
+            <div class="restaurant-content">
+                <h3>Schezwan Noodles</h3>
+                <p>Fiery wok-tossed noodles with Schezwan sauce, tofu and crunchy veggies</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(762 reviews)</p>
+                <p class="menu-price">&#8377;209</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=600" alt="Prawn Noodles">
+            <div class="restaurant-content">
+                <h3>Prawn Stir-Fry Noodles</h3>
+                <p>Tiger prawns wok-tossed with glass noodles and a ginger-garlic-soy glaze</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(419 reviews)</p>
+                <p class="menu-price">&#8377;299</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= FRIED RICE ========================= -->
+<div class="section-block" id="rice">
+    <h2>&#x1F35A; Fried Rice</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600" alt="Veg Fried Rice">
+            <div class="restaurant-content">
+                <h3>Veg Fried Rice</h3>
+                <p>Light and fluffy wok-tossed rice with colourful vegetables and egg</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(832 reviews)</p>
+                <p class="menu-price">&#8377;179</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600" alt="Chicken Fried Rice">
+            <div class="restaurant-content">
+                <h3>Chicken Fried Rice</h3>
+                <p>Fragrant fried rice with tender chicken strips, spring onions and soy</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(1.3k reviews)</p>
+                <p class="menu-price">&#8377;229</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600" alt="Schezwan Fried Rice">
+            <div class="restaurant-content">
+                <h3>Schezwan Fried Rice</h3>
+                <p>Boldly spiced wok-fried rice with Schezwan chutney and mixed vegetables</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(678 reviews)</p>
+                <p class="menu-price">&#8377;199</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=600" alt="Prawn Fried Rice">
+            <div class="restaurant-content">
+                <h3>Prawn Fried Rice</h3>
+                <p>Juicy prawns wok-tossed with jasmine rice, egg and oyster sauce</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(387 reviews)</p>
+                <p class="menu-price">&#8377;269</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= MANCHURIAN ========================= -->
+<div class="section-block" id="manchurian">
+    <h2>&#x1F373; Manchurian &amp; Chilli</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600" alt="Veg Manchurian">
+            <div class="restaurant-content">
+                <h3>Veg Manchurian (Gravy)</h3>
+                <p>Crispy veggie balls simmered in a tangy soy-garlic gravy with spring onions</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(621 reviews)</p>
+                <p class="menu-price">&#8377;219</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600" alt="Chicken Manchurian">
+            <div class="restaurant-content">
+                <h3>Chicken Manchurian</h3>
+                <p>Crispy chicken tossed in a spicy soy-chilli-garlic sauce — Indo-Chinese classic</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(948 reviews)</p>
+                <p class="menu-price">&#8377;269</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=600" alt="Chilli Paneer">
+            <div class="restaurant-content">
+                <h3>Chilli Paneer</h3>
+                <p>Crispy cottage cheese cubes stir-fried with peppers, chillies and black bean sauce</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(756 reviews)</p>
+                <p class="menu-price">&#8377;249</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600" alt="Chilli Chicken">
+            <div class="restaurant-content">
+                <h3>Chilli Chicken (Dry)</h3>
+                <p>Wok-tossed chicken with dried red chillies, ginger and a touch of vinegar</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.1k reviews)</p>
+                <p class="menu-price">&#8377;279</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= MOMOS ========================= -->
+<div class="section-block" id="momos">
+    <h2>&#x1F95F; Momos &amp; Dumplings</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=600" alt="Veg Steamed Momos">
+            <div class="restaurant-content">
+                <h3>Veg Steamed Momos (8 pcs)</h3>
+                <p>Delicate steamed dumplings filled with cabbage, carrot and ginger with red chutney</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(1.4k reviews)</p>
+                <p class="menu-price">&#8377;149</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600" alt="Chicken Momos">
+            <div class="restaurant-content">
+                <h3>Chicken Momos (8 pcs)</h3>
+                <p>Juicy minced chicken dumplings steamed or fried, served with spicy dip</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(1.6k reviews)</p>
+                <p class="menu-price">&#8377;179</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1530469912745-a215c6b256ea?w=600" alt="Pan-Fried Dumplings">
+            <div class="restaurant-content">
+                <h3>Pan-Fried Dumplings (6 pcs)</h3>
+                <p>Golden-bottomed gyoza-style dumplings with a crispy crust and savoury filling</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(589 reviews)</p>
+                <p class="menu-price">&#8377;199</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= BEVERAGES ========================= -->
+<div class="section-block" id="beverages">
+    <h2>&#x1F964; Beverages</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600" alt="Green Tea">
+            <div class="restaurant-content">
+                <h3>Jasmine Green Tea</h3>
+                <p>Delicate Chinese jasmine-infused green tea served hot or iced</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(412 reviews)</p>
+                <p class="menu-price">&#8377;79</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600" alt="Lychee Soda">
+            <div class="restaurant-content">
+                <h3>Lychee Soda</h3>
+                <p>Refreshing sparkling soda infused with sweet lychee syrup and lime</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(367 reviews)</p>
+                <p class="menu-price">&#8377;99</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=600" alt="Mango Bubble Tea">
+            <div class="restaurant-content">
+                <h3>Mango Bubble Tea</h3>
+                <p>Creamy mango milk tea with chewy tapioca pearls &mdash; a Taiwanese classic</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(648 reviews)</p>
+                <p class="menu-price">&#8377;149</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1555661059-7b6e06b32d7c?w=600" alt="Plum Juice">
+            <div class="restaurant-content">
+                <h3>Sweet Plum Juice</h3>
+                <p>Traditional Chinese plum concentrate diluted with chilled water and mint</p>
+                <p class="menu-rating">&#11088; 4.6 &nbsp;(218 reviews)</p>
+                <p class="menu-price">&#8377;89</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= DESSERTS ========================= -->
+<div class="section-block" id="desserts">
+    <h2>&#x1F368; Desserts</h2>
+    <div class="restaurant-grid">
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600" alt="Sesame Balls">
+            <div class="restaurant-content">
+                <h3>Sesame Balls (4 pcs)</h3>
+                <p>Deep-fried glutinous rice balls rolled in sesame, filled with lotus paste</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(321 reviews)</p>
+                <p class="menu-price">&#8377;119</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600" alt="Mango Pudding">
+            <div class="restaurant-content">
+                <h3>Mango Pudding</h3>
+                <p>Silky Hong Kong-style mango panna cotta topped with fresh mango cubes</p>
+                <p class="menu-rating">&#11088; 4.9 &nbsp;(487 reviews)</p>
+                <p class="menu-price">&#8377;129</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1556040220-4096d522378d?w=600" alt="Fortune Cookie">
+            <div class="restaurant-content">
+                <h3>Fortune Cookies (6 pcs)</h3>
+                <p>Classic crispy fortune cookies &mdash; each hides a cheerful message inside</p>
+                <p class="menu-rating">&#11088; 4.7 &nbsp;(632 reviews)</p>
+                <p class="menu-price">&#8377;79</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="https://images.unsplash.com/photo-1559181567-c3190797d64a?w=600" alt="Egg Tart">
+            <div class="restaurant-content">
+                <h3>Egg Tart (2 pcs)</h3>
+                <p>Buttery pastry shell cradling a smooth baked egg custard &mdash; dim sum classic</p>
+                <p class="menu-rating">&#11088; 4.8 &nbsp;(398 reviews)</p>
+                <p class="menu-price">&#8377;109</p>
+                <a href="../html/cart.html"><button class="menu-add-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= ABOUT ========================= -->
+<div class="section-block">
+    <div class="rest-about-grid">
+        <div class="rest-about-text">
+            <h2>About Dragon Wok</h2>
+            <p>
+                Founded in 2010, Dragon Wok brings the vibrant street food culture of China&rsquo;s Sichuan and Cantonese
+                provinces to the heart of Mumbai. Our chefs trained in Hong Kong and Chengdu, ensuring every dish
+                respects the original technique &mdash; from wok-hei fried rice to hand-folded dumplings.
+            </p>
+            <p>
+                We use imported sauces, fresh produce and high-BTU commercial woks to achieve the authentic smoky
+                &ldquo;breath of the wok&rdquo; flavour that separates real Chinese cooking from imitations.
+            </p>
+            <div class="rest-about-stats">
+                <div class="rest-stat">
+                    <span class="rest-stat-number">15+</span>
+                    <span class="rest-stat-label">Years cooking</span>
+                </div>
+                <div class="rest-stat">
+                    <span class="rest-stat-number">40k+</span>
+                    <span class="rest-stat-label">Happy customers</span>
+                </div>
+                <div class="rest-stat">
+                    <span class="rest-stat-number">4.6</span>
+                    <span class="rest-stat-label">Average rating</span>
+                </div>
+                <div class="rest-stat">
+                    <span class="rest-stat-number">25 min</span>
+                    <span class="rest-stat-label">Avg delivery</span>
+                </div>
+            </div>
+        </div>
+        <div class="rest-about-image">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=700" alt="Dragon Wok restaurant interior">
+        </div>
+    </div>
+</div>
+
+<!-- ========================= CUSTOMER REVIEWS ========================= -->
+<div class="section-block">
+    <h2>&#11088; Customer Reviews</h2>
+    <div class="reviews-grid">
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-avatar">S</div>
+                <div>
+                    <div class="review-name">Sneha R.</div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+            </div>
+            <p class="review-text">"The Chicken Momos are absolutely addictive &mdash; perfectly juicy inside and the red chutney is fire! Schezwan noodles were spot-on. Best Chinese delivery in Mumbai by far."</p>
+            <span class="review-date">3 days ago</span>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-avatar">K</div>
+                <div>
+                    <div class="review-name">Kiran T.</div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+            </div>
+            <p class="review-text">"Ordered Chilli Chicken and Fried Rice &mdash; came hot, portions were generous and the packaging was leak-proof. Mango Bubble Tea was a bonus. Will be a regular!"</p>
+            <span class="review-date">1 week ago</span>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-avatar">V</div>
+                <div>
+                    <div class="review-name">Vivek N.</div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                </div>
+            </div>
+            <p class="review-text">"Veg Manchurian gravy is rich without being too salty. Hot &amp; Sour Soup hit the spot. Delivery was 28 mins &mdash; right on time. Would love more Cantonese options on the menu!"</p>
+            <span class="review-date">2 weeks ago</span>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= FAQ ========================= -->
+<div class="section-block">
+    <h2>&#10067; Frequently Asked Questions</h2>
+    <div class="faq-list">
+
+        <details class="faq-item">
+            <summary class="faq-question">Is the food authentically Chinese or Indo-Chinese?</summary>
+            <p class="faq-answer">We serve both! Our soups, dim sum and desserts follow authentic Cantonese and Sichuan recipes, while our Manchurian, Chilli Chicken and Schezwan dishes are crowd-favourite Indo-Chinese preparations.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">Can I adjust the spice level?</summary>
+            <p class="faq-answer">Yes &mdash; use the Special Instructions box at checkout to specify mild, medium or extra-hot. Our default preparation is medium spice.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">Do you have gluten-free options?</summary>
+            <p class="faq-answer">Several of our rice dishes and soups can be made gluten-free on request. Please mention your requirement in Special Instructions and our kitchen will substitute soy sauce with tamari.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">What is your delivery radius?</summary>
+            <p class="faq-answer">We deliver within 8 km of our South Mumbai kitchen. Typical delivery time is 20&ndash;30 minutes.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary class="faq-question">Are the momos freshly made?</summary>
+            <p class="faq-answer">Absolutely. All momos and dumplings are hand-folded fresh daily and steamed or fried to order &mdash; never frozen.</p>
+        </details>
+
+    </div>
+</div>
+
+<!-- ========================= FOOTER ========================= -->
+<footer>
+    <div class="footer-grid">
+        <div>
+            <h4>Savoury</h4>
+            <p>24 Market Street, Mumbai, Maharashtra, 400000</p>
+            <p>support@savoury.com | +91 98765 43210</p>
+            <div class="footer-social">
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://fb.com" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/cuisine.html">Cuisines</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+                <li><a href="../html/about_us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Hours</h4>
+            <p>Mon - Fri: 10 AM - 10 PM</p>
+            <p>Sat - Sun: 11 AM - 11 PM</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Savoury. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
